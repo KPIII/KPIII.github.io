@@ -68,6 +68,7 @@
 
 #custom-bootstrap-menu
 {
+	backface-visibility:hidden;
 	/*position:fixed;
 	width:100%;
 	background:white;*/
