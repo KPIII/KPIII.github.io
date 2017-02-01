@@ -47,7 +47,7 @@
 #custom-bootstrap-menu.navbar-default .navbar-nav>li:hover
 {
 	border-bottom:solid red;
-	 transition: all 0.2s ease;
+	/* transition: all 0.2s ease;*/
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover
