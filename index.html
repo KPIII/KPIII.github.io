@@ -7,28 +7,29 @@
 	<script style="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
-	<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top " role="navigation">
-	    <div class="container-fluid">
-		<div class="navbar-header"><a class="navbar-brand" href="#" ><span id='gmn'>Gemini</span></a>
-		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-		    </button>
+	<div class='row' id='navcloser'>
+		<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top " role="navigation">
+		    <div class="container-fluid">
+			<div class="navbar-header"><a class="navbar-brand" href="#" ><span id='gmn'>Gemini</span></a>
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			    </button>
+			</div>
+			<div class="collapse navbar-collapse navbar-menubuilder">
+			    <ul class="nav navbar-nav navbar-left">
+				<li><a href="#home">Home</a>
+				</li>
+				<li><a href="#products">Products</a>
+				</li>
+				<li><a href="#services">Services</a>
+				</li>
+				<li><a href="#about">About Us</a>
+				</li>
+				<li><a href="#contact">Contact Us</a>
+				</li>
+			    </ul>
+			</div>
+		    </div>
 		</div>
-		<div class="collapse navbar-collapse navbar-menubuilder">
-		    <ul class="nav navbar-nav navbar-left">
-			<li><a href="#home">Home</a>
-			</li>
-			<li><a href="#products">Products</a>
-			</li>
-			<li><a href="#services">Services</a>
-			</li>
-			<li><a href="#about">About Us</a>
-			</li>
-			<li><a href="#contact">Contact Us</a>
-			</li>
-		    </ul>
-		</div>
-	    </div>
 	</div>
 	<div class='row' id='home'>
 		<div id="gposter">
@@ -235,4 +236,13 @@
 		
 	</div>
 </body>
+<script>
+	$("#custom-bootstrap-menu").affix({
+	  offset: {
+	    top: 100
+	  }
+	});
+
+	$("#navcloser").height($("#custom-bootstrap-menu").height());
+</script>
 </html>
