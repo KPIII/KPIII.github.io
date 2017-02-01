@@ -237,12 +237,15 @@
 	</div>
 </body>
 <script>
-	$("#custom-bootstrap-menu").affix({
-	  offset: {
-	    top: 100
-	  }
+	$(document).ready(function(){
+		$("#custom-bootstrap-menu").affix({
+		  offset: {
+		    top: 100
+		  }
+		});
+	
+		$("#navcloser").height($("#custom-bootstrap-menu").height());
 	});
 
-	$("#navcloser").height($("#custom-bootstrap-menu").height());
 </script>
 </html>
