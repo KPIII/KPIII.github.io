@@ -1,0 +1,523 @@
+<html>
+<head>
+	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script style="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<style>
+		#about, #contact
+		{
+			/*margin-top:100px;*/
+		}
+		
+		#about
+		{
+			background: rgba(0, 5, 0, 0);
+			height:800px;
+			/*background:linear-gradient(to left,rgba(0,95,20,0.51),white);*/
+			margin-top:20px;
+		}
+		
+		pre
+		{
+			white-space:pre-line;
+			word-break: keep-all;
+			font-weight:bold;
+			font-size:12pt;
+		}	
+		
+		#prediv > pre 
+		{ 
+			white-space:pre-line;
+			background:rgba(0,255,0,0.7);
+			border:none;
+			color:rgba(255,255,255,1);
+		
+		}
+		
+		#prediv
+		{
+			/*background-color:black;*/
+		}
+		
+		.vmv > h3 > span
+		{
+			/*background:rgba(255,21,45,0.51)*/;
+			border-radius:50%;
+			padding:90px;
+			font-weight:bold;
+			
+		}
+		
+		.vmv > h3 
+		{
+			position:relative;
+		}
+		
+		
+		
+		.vmv > pre,  #values > ul
+		{
+			/*position:absolute;*/
+			
+			font-weight:bold;
+			font-size:10pt;
+			font-family:cursive;
+			background:rgba(255,255,255,0);
+			left:190px;
+			border-width:3px 0px 3px 0px;
+			border-style:solid;
+			border-color:rgba(255,0,0,1);
+			
+			border-radius:1px;
+			border-top-left-radius:1px;
+			border-bottom-left-radius:1px;
+			border-top-left-radius:1px;
+			border-bottom-left-radius:1px;
+			/*border-right:26px solid rgba(255,0,0,1);*/
+			
+			
+			width:600px;
+			height:220px;
+			padding-left:100px;
+			padding-right:100px;
+			top:-72px;
+		}
+		/*
+		.vmv > pre:after,  #values > ul:after
+		{
+			position:absolute;
+			content:"";
+			top:0px;
+			border-top-right-radius:50%;
+			border-bottom-right-radius:50%;
+			left:500px;
+			border-width:90px;
+			border-style:solid;
+			background:red;
+			
+		}
+		*/
+		#values > ul > li:nth-child(1)
+		{
+			padding-top:75px;
+			
+		}
+		
+		#values > ul
+		{
+			position:absolute;
+			
+			background:linear-gradient(to right,white,   rgba(139, 26, 87, 1));
+			z-index:-1;
+		}
+		
+		
+		#vision > h3
+		{
+		
+		}
+		
+		#vision > h3 > span
+		{
+			background:rgba(0,0,0,0.51);
+			color:rgba(255,255,255,1);
+			font-weight:bold;
+			background:linear-gradient(to left, rgba(255, 95, 223, 1),white);
+			
+		}
+		
+		#vision > pre
+		{
+			position:absolute;
+			z-index:-1;
+			padding-top:50px;
+			background:red;
+			background:linear-gradient(to right,white,  rgba(27, 0, 255, 0.5));
+			
+		}
+		
+		.vmv
+		{
+			
+		}
+		
+		#mission
+		{
+			margin-top:300px;
+		}
+		
+		#vision
+		{
+			margin-top:200px;
+		}
+		
+		#values
+		{
+			margin-top:300px;
+		}
+		
+		#mission > h3
+		{
+			
+		}
+		
+		#mission > h3 > span
+		{
+			
+			
+			background:rgba(5,0,2,0.51);
+			background:linear-gradient(to left,rgba(25,100,2,0.51),white);
+			color:rgba(255,255,255,1);
+		}
+		
+		
+		
+		#mission > pre
+		{
+			position:absolute;
+			padding-top:28px;
+			background:linear-gradient(to right,white,  rgba(139, 218, 132, 1));
+			z-index:-1;
+		}
+		
+		
+		#values > h3
+		{
+			
+		}
+		
+		#values > h3 > span
+		{
+			/*top:85px;
+			left:370px;*/
+			background:rgba(9, 135, 221, 0.8);
+			background:linear-gradient(to left,rgba(9, 135, 221, 0.5),white);
+			color:rgba(255,255,255,1);
+		}
+		
+		#contact
+		{
+			margin-top:300px;
+		}
+		
+		.ribbon
+		{
+			border-style:solid;
+			border-color:transparent;
+			
+			border-top:212px solid red;
+			border-right:156px solid transparent;
+			/*border-bottom:53px solid transparent;*/
+			
+			width:0;
+			height:0;
+			
+			/*border-radius:80px*/
+			/*
+			background-color:black;*/
+			position:absolute;
+			top:-42px;
+			left:765px;
+		}
+		
+		.ribbon2
+		{
+			border-style:solid;
+			border-color:transparent;
+			
+			border-top:210px solid transparent;
+			border-left:156px solid rgba(255,0,0,1);
+			width:0;
+			height:0;
+			
+			position:absolute;
+			top:-42px;
+			left:765px;
+			
+		}
+		
+		.minirib
+		{
+			border-style:solid;
+			border-color:transparent;
+			
+			border-top:30px solid transparent;
+			border-right:28px solid rgba(0,0,0,1);
+			width:0;
+			height:0;
+			
+			
+			position:absolute;
+			top:-72px;
+			left:765px;
+			z-index:-1;
+		}
+		
+		@media only screen and (max-width : 992px) 
+		{
+			.vmv > pre,  #values > ul
+			{
+				position:absolute;
+				top:-95px;
+				
+			}
+			
+			.ribbon
+			{
+				top:-65px;
+				
+			}
+			
+			.ribbon2
+			{
+			
+			}
+			
+			.minirib
+			{
+				top:-95px;
+				left:762px;
+			}
+		}
+		
+		@media only screen and (max-width : 768px) {
+			.vmv > pre,  #values > ul
+			{
+			
+				position:absolute;
+				top:0px;
+				left:10px;
+				height:480px;
+				border-width:0px 3px 0px 3px;
+				width:276px;
+				padding-left:20px;
+				padding-right:20px;
+				padding-top:150px;
+			}
+			
+			#vision > h3 > span
+			{
+				padding:99px;
+			}
+			
+			#values > h3 > span
+			{
+				padding:97px;
+			}
+			
+			#vision > pre
+			{
+				background:linear-gradient(to bottom,white,  rgba(27, 0, 255, 0.5));
+				padding-top:150px;
+			}
+			
+			#mission > pre
+			{
+				background:linear-gradient(to bottom,white,  rgba(139, 218, 132, 1));
+				padding-top:150px;
+			}
+						
+			#values > ul
+			{
+				background:linear-gradient(to bottom,white,   rgba(139, 26, 87, 1));
+				padding-top:80px;
+			}	
+			
+			#mission
+			{
+				margin-top:700px;
+			}
+			
+			#values
+			{
+				margin-top:700px;
+			}
+			
+			#contact
+			{
+				position:relative;
+				top:1300px;
+			}
+			
+			.ribbon
+			{
+				top:450px;
+				left:45;
+				border:none;
+				border-right:250px solid red;
+				border-bottom:156px solid transparent;
+			}
+			
+			.ribbon2
+			{
+				top:450px;
+				left:45;
+				border:none;
+				border-left:250px solid red;
+				border-bottom:156px solid transparent;
+			}
+			
+			.minirib
+			{
+				top:450px;
+				left:8px;
+				border-top:30px solid transparent;
+				border-right:35px solid rgba(0,0,0,1);
+			}
+		}
+		
+		#main
+		{
+			margin-top:70px;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<nav class="navbar navbar-default navbar-fixed-top" id='custom-bootstrap-menu'>
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><span id='d1stop'>One Stop 4 Brides</span></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav" id='menulist'>
+				<li><a href="index.html"><span>Home <span class="sr-only">(current)</span></span></a></li>
+				<li><a href="eventPlanner.html"><span>Event Planner</span></a></li>
+				<li><a href="cakes.html" id='cakes'><span>Cakes</span></a></li>
+				<li><a href="interiorDesign.html"><span>Interior Design</span></a></li>
+				<li><a href="aboutus.html"><span>About</span></a></li>
+				<li><a href="#contact"><span>Contact</span></a></li>
+				<!--li><a href="#contact"><span id='rval'>Contact</span></a></li-->
+			</ul>
+			<!--li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">One more separated link</a></li>
+			  </ul>
+			</li>
+		      </ul-->
+		      <!--form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		      </form-->
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div>
+	
+	<div class='container'>
+		<div id ='main' class='row'>
+			<div class='row'>
+				<img src='images/picture2.png'>
+			</div>
+			<div class='row'>
+				<div class='col-sm-8 col-md-8 col-md-offset-1' id='prediv'>
+				<pre>
+					One stop for brides is a business that believes in having a life time relationship with its. Our journey begins when we meet you as a bride to be and help your friends to secretly plan a bridal shower for you. Your big day is approaching fast and to take the worries away we provide you with the services of an event planner, venue decorator and design a beautiful tasty cake as a cherry on top. No bags under our bride’s eyes. You and your groom move into your new beautiful house and we help you transform your spaces and turn your house into a home
+
+As you expect your first bundle of joy we are there again for that surprise baby shower that you are expecting but trying to pretend you are not. We organize baby shower games, décor and that unique cake that you wish you could keep forever. Your little one gets their first tooth, takes their first step in no time it’s their first birthday and we are there to provide our friendly and professional service. We are also there for many more bundles of joy and many more birthdays to come.
+
+You realize how time flies and you can’t believe how you are still in love with your husband as you celebrate many anniversaries and you just know that no celebration is complete without our novelty cakes. As you approach a decade you want to renew your vowels with a small intermit ceremony. One stop for brides will make this day as special as your wedding day. No event is too small or too big for us.
+
+Your children are all grown up and we watch you as you enjoy the same journey with them and create new memories, we will also be part of their journey.
+				</pre>
+				</div>
+				<div class='col-md-3 col-sm-4'>
+					<div id='row'>
+						<img src='images/picture3.png'>
+					</div>
+					<div id='row'>
+						<img src='images/picture4.png'>
+					</div>
+					<div id='row'>
+						<img src='images/picture5.png'>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='about' class='row'>
+			<div class='col-md-12 col-sm-12'>
+				<div class='col-md-12 vmv' id='vision'>
+					<h3><span>Vision</span></h3>
+					<pre>
+						To have a life time relationship with our clients and provide outstanding quality service for every budget.
+	Create an unforgettable memory for you and make the process of rendering you our services an effortless journey.
+	To bring an exceptional solution to any challenge our clients might encounter.
+
+					</pre>
+					<div class='ribbon'>
+					
+					</div>
+					<div class='ribbon2'>
+					
+					</div>
+					<div class='minirib'>
+					
+					</div>
+				</div>
+				<div class='col-md-12 vmv' id='mission'>
+					<h3><span>Mission</span></h3>
+					<pre>
+						To never compromise on the quality of our services or products and to always put professionalism ahead.
+	To provide the best experience for all our clients despite of their budget or size of their project. Most of all to be always be friendly and have respect for our clients
+	“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”? Maya Angelou
+
+					</pre>
+					<div class='ribbon'>
+					
+					</div>
+					<div class='ribbon2'>
+					
+					</div>
+					<div class='minirib'>
+					
+					</div>
+				</div>
+				<div class='col-md-12 vmv' id='values'>
+					<h3><span>Values</span></h3>
+					<ul>
+						<li>Integrity</li>
+						<li>Authenticity</li>
+						<li>Truth</li>
+					</ul>
+					<div class='ribbon'>
+					
+					</div>
+					<div class='ribbon2'>
+					
+					</div>
+					<div class='minirib'>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id='contact' class='row'>
+		<div class='col-md-12'><span class='glyphicon-home glyphicon'></span><span id='adrs'><span>Address:</span><span> John Maefield drive, Mondeor, Johannesburg</span></div>
+		<div class='col-md-12'><span class='glyphicon-earphone glyphicon'></span><span id='cellp'><span>Cellphone:</span><span> 0741468534</span></div>
+	</div>
+</body>
+<script>
+
+</script>
+</html>
