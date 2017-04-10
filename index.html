@@ -1,31 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script src="js/jquery-1.11.1.min.js"></script>
-	<script style="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<style>
-		#about, #contact
-		{
-			margin-top:100px;
-		}
-		
-		pre 
-		{ 
-			white-space:pre-line;
-			background:white;
-			border:none;
-			word-break: keep-all;
-		}
-		
-		#prediv
-		{
-			
-		}
-	</style>
+	<script src="js/script.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="row">
+	<div class='col-md-12' id='navdiv'>
 		<nav class="navbar navbar-default navbar-fixed-top" id='custom-bootstrap-menu'>
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,17 +19,15 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#"><span id='d1stop'>One Stop 4 Brides</span></a>
+		      <a class="navbar-brand" href="#"><span><img src='images/music-logo.png' id='mlogo'>
+		      <span id='tpart'>Terry</span><span id='mpart'>Music</span></a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav" id='menulist'>
 				<li><a href="index.html"><span>Home <span class="sr-only">(current)</span></span></a></li>
-				<li><a href="eventPlanner.html"><span>Event Planner</span></a></li>
-				<li><a href="cakes.html" id='cakes'><span>Cakes</span></a></li>
-				<li><a href="interiorDesign.html"><span>Interior Design</span></a></li>
-				<li><a href="aboutus.html"><span>About</span></a></li>
+				<li><a href="#about"><span>About</span></a></li>
 				<li><a href="#contact"><span>Contact</span></a></li>
 				<!--li><a href="#contact"><span id='rval'>Contact</span></a></li-->
 			</ul>
@@ -73,177 +54,166 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</div>
-	<div class='col-md-12' id='cont'>
-		<div id ='main' class='row'>
-			<div class='row'>
-				<!--img src='images/picture2.png'-->
-			</div>
-			
-		<!--div class='col-md-offset-5 col-md-4' id='results'>
-		</div-->
-			<div class='row'>
-					<div class='col-md-12'>
-						<div class='col-md-12 col-sm-12 col-xs-12 ' id='services'>
-								<div class='col-md-4 col-sm-4 col-xs-12'>
-									<div  class='col-md-12 col-sm-12 col-xs-12'>
-										<text><a href='eventPlanner.html'>Event Planner</a></text>
-									</div>
-									<div class='col-md-12 col-sm-12 col-xs-12'>
-										<img class='img-responsive' src='images/eventplanner.jpg'>
-									</div>
+	<div class='container' id='home'>
+		<div class='col-md-12 col-sm-12 col-xs-12' id='playerdiv'>
+			<div class='col-md-9 col-sm-12 col-xs-12 col-md-offset-1'>
+				<div id='nowbar' class='col-md-12 col-sm-12 col-xs-12'>
+					<span id='nowbartitle'>Now Playing</span>
+				</div>
+				<div class='col-md-12 col-sm-12 col-xs-12'  id='playerframe'>
+					<div class='col-md-6 col-sm-6 col-xs-12'>
+						<div class='song'>
+							<div class='col-md-12'>
+								<div class='row albumart'>
+									<img src='images/music_ph.png' id='cimage'>
 								</div>
-								<div class='col-md-4 col-sm-4 col-xs-12'>
-									<div  class='col-md-12 col-sm-12 col-xs-12'>
-										<text><a href='cakes.html'>Cakes</a></text>
-									</div>
-									<div class='col-md-12 col-sm-12 col-xs-12'>
-										<img class='img-responsive' src='images/edited/cake1.jpg'>
-									</div>
-								</div>
-								
-								<div class='col-md-4 col-sm-4 col-xs-12'>
-									<div  class='col-md-12 col-sm-12 col-xs-12'>
-										<text><a href='interiorDesign.html'>Interior Design</a></text>
-									</div>
-									<div class='col-md-12 col-sm-12 col-xs-12'>
-										<img class='img-responsive' src='images/living.jpg'>
-									</div>
-								</div>
+								<ul class='list-unstyled sdetails'>
+									<li>
+										<span>Artist:</span>
+										<span class='aname' id='caname'>
+											N/A
+										</span>
+									</li>
+									<li>
+										<span>Track:</span>
+										<span class='sname' id='csname'>
+											N/A
+										</span>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				<div class='col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1' id='prediv'>
-				<pre>
-					One stop for brides is a business that believes in having a life time relationship with its clients. Our journey begins when we meet you as a bride to be and help your friends to secretly plan a bridal shower for you. Your big day is approaching fast and to take the worries away we provide you with the services of an event planner, venue decorator and design a beautiful tasty cake as a cherry on top. No bags under our bride’s eyes. You and your groom move into your new beautiful house and we help you transform your spaces and turn your house into a home
-
-As you expect your first bundle of joy we are there again for that surprise baby shower that you are expecting but trying to pretend you are not. We organize baby shower games, décor and that unique cake that you wish you could keep forever. Your little one gets their first tooth, takes their first step in no time it’s their first birthday and we are there to provide our friendly and professional service. We are also there for many more bundles of joy and many more birthdays to come.
-
-You realize how time flies and you can’t believe how you are still in love with your husband as you celebrate many anniversaries and you just know that no celebration is complete without our novelty cakes. As you approach a decade you want to renew your vowels with a small intermit ceremony. One stop for brides will make this day as special as your wedding day. No event is too small or too big for us.
-
-Your children are all grown up and we watch you as you enjoy the same journey with them and create new memories, we will also be part of their journey.
-				</pre>
-					
+					<div class='col-md-6 col-sm-6 col-xs-12' id='splayer'>
+						<audio controls>
+						  <source id='mainsource' src='' type="audio/mpeg">
+						  <!--source src="songs/Terry Muzic - intro.mp3" type="audio/mpeg"-->
+						Your browser does not support the audio element.
+						</audio>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class='col-md-10 col-md-offset-1'>
+			<div class='col-md-12 col-sm-12 col-xs-12'>
+				<div id='bar' class='col-md-12 col-sm-12 col-xs-12'>
+					<span id='bartitle'>Promotional Songs</span>
+				</div>
+				<div id='songs' class='col-md-12 col-sm-12 col-xs-12'>
+					<div class='song'>
+						<div class='col-md-12'>
+							<div class='row albumart'>
+								<img src='images/music_ph.png'>
+							</div>
+							<ul class='list-unstyled sdetails'>
+								<li>
+									<span>Artist:</span>
+									<span class='aname'>
+										Terry Muzik
+									</span>
+								</li>
+								<li>
+									<span>Track:</span>
+									<span class='sname'>
+										intro
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class='col-md-12'>
+							<button class='play-button' id='t-0'>Play Track</button>
+						</div>
+					</div>
+					<div class='song'>
+						<div class='col-md-12'>
+							<div class='row albumart'>
+								<img src='images/music_ph.png'>
+							</div>
+							<ul class='list-unstyled sdetails'>
+								<li>
+									<span>Artist:</span>
+									<span class='aname'>
+										Terry Muzik
+									</span>
+								</li>
+								<li>								
+									<span>Track:</span>
+									<span class='sname'>
+										Our God
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class='col-md-12'>
+							<button class='play-button' id='t-1'>Play Track</button>
+						</div>
+					</div>
+					<div class='song'>
+						<div class='col-md-12'>
+							<div class='row albumart'>
+								<img src='images/music_ph.png'>
+							</div>
+							<ul class='list-unstyled sdetails'>
+								<li>
+									<span>Artist:</span>
+									<span class='aname'>
+										Terry Muzik
+									</span>
+								</li>
+								<li>								
+									<span>Track:</span>
+									<span class='sname'>
+										Touched Heart
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class='col-md-12'>
+							<button class='play-button' id='t-2'>Play Track</button>
+						</div>
+					</div>
+					<div class='song'>
+						<div class='col-md-12'>
+							<div class='row albumart'>
+								<img src='images/music_ph.png'>
+							</div>
+							<ul class='list-unstyled sdetails'>
+								<li>
+									<span>Artist:</span>
+									<span class='aname'>
+										Terry Muzik
+									</span>
+								</li>
+								<li>								
+									<span>Track:</span>
+									<span class='sname'>
+										Hosana
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class='col-md-12'>
+							<button class='play-button' id='t-3'>Play Track</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	<div class='col-md-12' id='cover'>
-	</div>
-	</div>
-		<div id='about' class='row'>
-				
+	<div id='about'>
+		<div class='col-md-12' id='ab'><span>About Us</span></div>
+		<div class='col-md-7 col-md-offset-5 col-sm-7 col-sm-offset-5'>
+			<div id='image-frame'>
+				<img src='images/terry.jpg' id='pp'>
+				<div class='col-md-12'>
+					<span>TerryMusic is owned by Terry Matuta</span>
+				</div>
+			</div>
 		</div>
-			
-		<div id='contact' class='row'>
-			<div class='col-md-12'><span class='glyphicon-home glyphicon'></span><span id='adrs'><span>Address:</span><span> John Maefield drive, Mondeor, Johannesburg</span></div>
-			<div class='col-md-12'><span class='glyphicon-earphone glyphicon'></span><span id='cellp'><span>Cellphone:</span><span> 0741468534</span></div>
-		</div>
+	</div>
+	<div id='contact'>
+	
 	</div>
 </body>
-<script>
-	var gate1 = 0;
-	var gate2 = 0;
-	var gate3 = 0;
-	var gatename = 'll';
-		
-	var state1 = true;
-	var state2 = true;
-	var state3 = true;
-	
-	reset();
-	
-	function reset()
-	{
-		gate1 = 25;
-		gate2 = 255;
-		gate3 = 25;
-		//$('#results').append('reset<br>');
-	}
-	
-	$(document).ready(function(){
-		$('#cover').css('opacity',0.8);
-		$('#cont').css('opacity',1);
-		
-		/*
-		setInterval(function(){
-					gate1 = (Math.random() * (255 - 0) + 0).toFixed(0);;
-					gate2 = (Math.random() * (255 - 0) + 0).toFixed(0);
-					gate3 = (Math.random() * (255 - 0) + 0).toFixed(0);
-			
-			$('#prediv > pre').css('background-color','rgba('+gate1+','+gate2+','+gate3+',1)');
-			$('#rval').html(''+gatename+'rgba('+gate1+','+gate2+','+gate3+',1)');
-		},1000*2);
-		
-		*/
-		$('#prediv > pre').css('background-color','rgba('+gate1+','+gate2+','+gate3+',0.4)');
-		//	$('#rval').html(''+gatename+'rgba('+gate1+','+gate2+','+gate3+'0.4)');
-	});
-	
-	
-	function gate01()
-	{
-		if(gate1 < 255)
-			++gate1;
-		else
-		{
-			if(gate2 < 255)
-				++gate2;
-			else
-			{
-				if(gate3 < 255)
-					++gate3;
-				else
-				{
-					return true;
-				}
-			}
-		}
-		gatename= 'gate 1 ';
-		return false;
-	}
-	
-	function gate02()
-	{
-		if(gate2 < 255)
-			++gate2;
-		else
-		{
-			if(gate1 < 255)
-				++gate1;
-			else
-			{
-				if(gate3 < 255)
-					++gate3;
-				else
-				{
-					return true;
-				}
-			}
-		}
-		gatename= 'gate 2 ';
-		return false;
-	}
-	
-	function gate03()
-	{
-		if(gate3 < 255)
-			++gate3;
-		else
-		{
-			if(gate2 < 255)
-				++gate2;
-			else
-			{
-				if(gate1 < 255)
-					++gate1;
-				else
-				{
-					return true;
-				}
-			}
-		}
-		gatename= 'gate 3 ';
-		return false;
-	}
-	
-</script>
 </html>
