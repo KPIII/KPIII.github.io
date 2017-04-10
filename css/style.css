@@ -176,3 +176,68 @@
 	font-size:16pt;
 	font-weight:bold;
 }
+
+#vidbar
+{
+	height:50px;
+	/*background:rgba(123,169,248,1);*/
+	background: rgba(255, 7, 1, 1);
+	border-top-left-radius:1px;
+	border-top-right-radius:1px;
+	box-shadow:1px 0 5px; 
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	color:rgba(255,255,255,1);
+	
+	
+}
+
+#vidbartitle
+{
+	font-size:16pt;
+	
+}
+
+#videos
+{
+	margin-top:150px;
+	margin-bottom:80px;
+}
+
+#vidframe
+{
+	box-shadow:1px 0 5px; 
+	padding-bottom:30px;
+	padding-right:30px;
+}
+
+.vid > div:nth-child(2)
+{
+	margin-top: 50px;
+}
+
+.sdetails > li > span
+{
+	font-weight:bold;
+}
+
+#tnav > li > a
+{
+	padding:10px;
+	background:rgba(219, 215, 92, 1);
+	background:linear-gradient(to bottom, rgba(219, 215, 92, 1) , rgba(129, 105, 92, 1));
+	border-radius:5px;
+	font-size:15pt;
+	color:white;
+}
+ 
+ #tnav > li
+ {
+	 margin-bottom:30px;
+ }
+ 
+ #vshell
+ {
+	 padding-top:50px;
+ }

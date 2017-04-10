@@ -20,7 +20,7 @@
 			<span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#"><span><img src='images/music-logo.png' id='mlogo'>
-		      <span id='tpart'>Terry</span><span id='mpart'>Music</span></a>
+		      <span id='tpart'>Terry</span><span id='mpart'>Muzic</span></a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,6 +55,13 @@
 		</nav>
 	</div>
 	<div class='container' id='home'>
+	
+		<div class='col-md-12'>
+			<ul class='list-unstyled' id='tnav'>
+				<li><a href='#songlist'>Songs</a></li>
+				<li><a href='#videos'>Videos</a></li>
+			</ul>
+		</div>
 		<div class='col-md-12 col-sm-12 col-xs-12' id='playerdiv'>
 			<div class='col-md-9 col-sm-12 col-xs-12 col-md-offset-1'>
 				<div id='nowbar' class='col-md-12 col-sm-12 col-xs-12'>
@@ -94,7 +101,7 @@
 				</div>
 			</div>
 		</div>
-		<div class='col-md-10 col-md-offset-1'>
+		<div class='col-md-10 col-md-offset-1' id='songlist'>
 			<div class='col-md-12 col-sm-12 col-xs-12'>
 				<div id='bar' class='col-md-12 col-sm-12 col-xs-12'>
 					<span id='bartitle'>Promotional Songs</span>
@@ -198,6 +205,42 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	
+		<div class='col-md-12 col-sm-12 col-xs-12' id='videos'>
+			<div class='col-md-12 col-sm-12 col-xs-12' id='vshell'>				
+				<div id='vidbar' class='col-md-12 col-sm-12 col-xs-12'>
+					<span id='vidbartitle'>Videos</span>
+				</div>
+				<div class='col-md-12 col-sm-12 col-xs-12' id='vidframe'>
+					<div id='vids' class='col-md-12 col-sm-12 col-xs-12'>
+						<div class='vid'>
+							<div class='col-md-6 col-sm-12'>
+								<video width="320" height="240" controls>
+								<source src="videos/VID-20170410-WA0001.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class='col-md-6 col-sm-12'>
+								<ul class='list-unstyled sdetails'>
+									<li>
+										<span>Artist:</span>
+										<span class='aname' id='caname'>
+											Terry
+										</span>
+									</li>
+									<li>
+										<span>Track:</span>
+										<span class='sname' id='csname'>
+											God is Good
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div
 		</div>
 	</div>
 	
